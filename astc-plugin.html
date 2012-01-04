@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+  <TITLE>Installation Guide</TITLE>
+</HEAD>
+<BODY>
+<h2>What does the ASTC Plug-in do?</h2>
+The ASTC Plug-in will gather data about what code you edit or look at, when you did this action, the work item that is set as your current work item, and the user id that was used to log into the Jazz repository. The gathered data is then transmitted through a SSH2 tunnel to a server at the SEGaL lab located at the University of Victoria and stored in a data base.
+
+<p>&nbsp; </p>
+
+<div>
+<table class="image" align="left">
+<caption align="bottom">(Figure 1) How to get to the installation menue.</caption>
+<tr><td><a href="figure1e.png"><img width="250px" src="figure1e.png"></a></td></tr>
+</table>
+
+<table class="image">
+<caption align="bottom">(Figure 2) Where to put the repository url and what to select.</caption>
+<tr><td><a href="figure2e.png"><img width="350px" src="figure2e.png"></a></td></tr>
+</table>
+</div>
+
+<p>&nbsp; </p>
+
+<h2>Installing Mylyn</h2>
+If you know how to install an Eclipse Plug-in just get the URL below and go ahead.
+<ol>
+<li>To install Mylyn go to "Help"->"Install Software" (Figure 1)</li>
+<li>add <a href="http://download.eclipse.org/mylyn/releases/latest">http://download.eclipse.org/mylyn/releases/latest</a> (Figure 2) to your list of online repositories</li>
+<li>install everything offered on that site (Figure 2)</li>
+<li>restart Eclipse</li>
+</ol>
+
+<p>&nbsp; </p>
+
+<div>
+<table class="image" align="left">
+<caption align="bottom">(Figure 3) How to get to the preferences.</caption>
+<tr><td><a href="figure3e.png"><img width="200px" src="figure3e.png"></a></td></tr>
+</table>
+
+<table class="image" align="left">
+<caption align="bottom">(Figure 4) How to get to the Mylyn configuration and what to change.</caption>
+<tr><td><a href="figure4e.png"><img width="350px" src="figure4e.png"></a></td></tr>
+</table>
+
+<table class="image">
+<caption align="bottom">(Figure 5) How to get to the Mylyn decorator and how to disable it.</caption>
+<tr><td><a href="figure5e.png"><img width="350px" src="figure5e.png"></a></td></tr>
+</table>
+</div>
+
+<p>&nbsp; </p>
+
+<h2>Configuring Mylyn</h2>
+If you are not a Mylyn user, you need to make some changes to the standard configuration such that Mylyn does not interfere  with your work flow. 
+<ol>
+<li>Go to "Eclipse"->"Preferneces" (Figure 3)</li>
+<li>Expand the "Mylyn" node, select "Context", and uncheck all boxes (Figure 4)</li>
+<li>Expand the "General" and "Appearance" node, select "Label Decorations", and uncheck the "Task Context Decorator" (Figure 5)</li>
+</ol>
+You can also close all Mylyn related views, such as the Task view.
+
+<p>&nbsp; </p>
+
+<div>
+<table class="image" align="left">
+<caption align="bottom">(Figure 6) How to get to the installation menue.</caption>
+<tr><td><a href="figure1e.png"><img width="300px" src="figure1e.png"></a></td></tr>
+</table>
+
+<table class="imgae">
+<caption align="bottom">(Figure 7) Where to put the repository url and what to select.</caption>
+<tr><td><a href="figure6e.png"><img width="350px" src="figure6e.png"></a></td></tr>
+</table>
+</div>
+
+<p>&nbsp; </p>
+
+<h2>Installing the ASTC Plug-in</h2>
+Installing the ASTC Plug-in is similar to installing the Mylyn plug-in without the issue of configuration.
+<ol>
+<li>Go to "Help"->"Install Software" (Figure 6)</li>
+<li>add <a href="http://home.segal.uvic.ca/~schadr/astc/agilefant-astc/site.xml">http://home.segal.uvic.ca/~schadr/astc/agilefant-astc/site.xml</a> (Figure 7) to your list of online repositoris</li>
+<li>install everything offered on that site (Figure 7)</li>
+<li>restart Eclipse</li>
+</ol>
+
+Wish you happy coding.
+Any bugs please either email <a href="mailto:adrian.schroeter@googlemail.com">adrian.schroeter@googlemail.com</a> or <a href="https://jazz.net/hub/ccm/web/projects/ActionableSTC#action=com.ibm.team.workitem.newWorkItem&type=defect">file a bug at directly</a> against our project.
+</BODY>
+</HTML>
+

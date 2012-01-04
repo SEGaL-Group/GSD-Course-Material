@@ -1,0 +1,101 @@
+<h2>Frequently Asked Questions:</h2>
+If you have any more questions than those that are answered here, please email <a href="mailto:adrian.schroeter@googlemail.com">adrian.schroeter@googlemail.com</a>
+
+<h3>How to install an Eclipse plug-in?</h3>
+<ul>
+<li>Go to Help->Install New Software ...</li>
+<li>Add either the path to the local plug-in folder that you want to install or the url of the plug-in</li>
+<li>Follow the installation dialogue.</li>
+<li>Restart Eclipse.</li>
+</ul>
+See <a href="">this page</a> for a more detailed example.
+
+<h3>How to commit a change?</h3>
+<strong>Using RTC SCM:</strong>
+<ul>
+<li>Open the Pending Changes View.</li>
+<li>Create a new ChangeSet by right-clicking the component containing the changes and select ChangeSet.</li>
+<li>Drag and drop the changed files in the Changes View into the ChangeSet.</li>
+<li>Right-click the ChangeSet and Related Artifacts->Associate Work Item.</li>
+<li>Right-click the ChangeSet and select close.</li>
+<li>Right-clich the ChangeSet and deliver.</li>
+</ul>
+
+<strong>Using eGit:</strong>
+<ul>
+<li>Select the files that have been changed.</li>
+<li>Right click and select commit.</li>
+<li>Add a comment of the form "WorkItem: xxx some text" without the "</li>
+<li>Commit.</li>
+</ul>
+
+
+
+<h3>How to create a work item?</h3>
+<ul>
+<li>In Windows/Linux use Ctlr+n and in Mac Cmd+n.</li>
+<li>Type "work item" without the " and select Work Item.</li>
+<li>Fill in all Fields.</li>
+<li>Save.</li>
+</ul>
+
+
+<h3>How to set a work item as current work?</h3>
+Within Eclipse:
+<ul>
+<li>Open the work item.</li>
+<li>Right click on the Work Item icon in the upper left.</li>
+<li>Select Set as Current WorkItem</li>
+</ul>
+Alternatively:
+<ul>
+<li>Open the work item.</li>
+<li>Drag the Work Item icon in the upper left to the </li>
+<li>To hte field displaying the current work item (usually in the lower left).</li>
+</ul>
+
+
+<h3>How to link a commit to a work item?</h3>
+Using eGit:
+<ul>
+<li>Add the post-commit git hook to your fork (only needs to be done once).</li>
+<li>Make sure that the commit comment starts with "WorkItem: xxx: some comment" (without ") , where xxx is the work item number.</li>
+<li>Push you commit to your github repository.</li>
+</ul>
+Using RTC:
+<ul>
+<li>Right click the change set.</li>
+<li>Go to "Related Artifacts" and add related artifact.</li>s
+</ul>
+
+
+<h3>How to open a work item?</h3>
+<strong>Eclipse UI:</strong>
+<ul>
+<li>Ctrl+n</li>
+<li>Select Work Item.</li>
+<li>Fill in the mandatory fields.</li>
+</ul>
+
+<h3>How to comment on a work item?</h3>
+<strong>Eclipse UI:</strong>
+<ul>
+<li>Open the work item.</li>
+<li>Click on the Add Comment link on the lower right.</li>
+<li>Write your comment.</li>
+<li>Click save.</li>
+</ul>
+
+
+<h3>How to pull changes from forked repository</h2>
+In Eclipse:
+<ul>
+<li>Open the Git Repositories View</li>
+<li>Right Click your repository.</li>
+<li>Select Fetch from Upstream</li>
+</ul>
+
+If you want to know more about github forks see <a href="http://help.github.com/fork-a-repo/">http://help.github.com/fork-a-repo/</a>
+
+<h3>How to configure Mylyn to be unobtrusive?</h3>
+see <a href="http://ballroom.segal.uvic.ca/~schadr/astc/guide/index.php">this page</a>  
