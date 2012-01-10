@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Project Configuration</title>
+</head>
+
+<body>
+
+<h1>1 Task Management</h1>
+
+<h2>1.1 Jazz</h2>
+<ul>
+  <li><b>URL:</b> https://jazz.net/hub/ccm and your <b>credentials</b> are your Jazz.net account and password (<a href="figure-1.png">see Figure -1</a>)</li>
+  <li><b>Project Area:</b> AgilEfant SuperAmerica (<a href="figur0.png">see Figure 0<a/>)</li>
+</ul>
+
+<!--h2>AgilEfant<h2-->
+
+<h1>2 Source Code</h1>
+
+<h2>2.1 GitHub</h2>
+These steps will need to be done on <a href="https://github.com">github.com</a>.
+<ul>
+  <li>Go to the AgilEfant repository at https://github.com/SuperAmerica/agilefant</li>
+  <li>Create a Fork. (<a href="figure1.png">see Figure 1</a>) (Note you need to be logged in with your github account)</li>
+  <li>go to your forked repository (Click on the button in the same location as the create Fork button)</li>
+  <li>go to Admin. (<a href="figure2.png">see Figure 2</a>)</li>
+  <li>go to Service CHooks. (<a href="figure3.png">see Figure 3</a>)</li>
+  <li>go to Post-Receive URLs. (<a href="figure4.png">see Figure 4</a>)</li>
+  <li>enter URL http://home.segal.uvic.ca/~schadr/astc/githooks/remote-post-commit.php (<a href="figure5.png">see Figure 5</a>)</li>
+</ul>
+
+<h2>2.2 eGit</h2>
+
+<h3>2.2.1 Configuration</h3>
+<ul>
+  <li>In Eclipse open the View selection (<a href="figure6.png">see Figure 6</a>)</li>
+  <li>Select the "Git Repositories" (<a href="figure7.png">see Figure 7</a>)</li>
+  <li>In the "Git Repositories View" click clone repository (<a href="figure8.png">see Figure 8</a>)</li>
+  <li>Copy the http address of your <a href="https://github.com">github.com</a> repository (<a href="figure9.png">see Figure 9</a>)</li>
+  <li>Paste the URL into the URI field and use your github credentials for Authentication (<a href="figure10.png">see Figure 10</a>)</li>
+  <li>There hshoud ebe only the master branch selected, hit next (<a href="figure11.png">see Figure 11</a>)</li>
+  <li>Select a directory to store the code on your harddrive and hit finish (<a href="figure12.png">see Figure 12</a>)</li>
+  <li>Right click the repository now in the view and select "Import Projects..." (<a href="figure13.png">see Figure 13</a>)</li>
+  <li>Select "Import existing projects" and click next (<a href="figure14.png">see Figure 14</a>)</li>
+  <li>Select the agilefant project and click finish (<a href="figure15.png">see Figure 15</a>)</li>
+  <li>Now the agile fant project should show up in the Package Eexplorer view (<a href="figure16.png">see Figure 16</a>)</li>
+  <li>Next we need to configure eGit to fetch changes from the main AgilEfant repository.</li>
+  <li>In the "Git Repositories" view right click the Fetch line of the origin remote repository and select "Change Credentials..." (<a href="figure17.png">see Figure 17</a>)</li>
+  <li>Select the one line in "RefSpec:" and click the "Copy" button, then the "Cancel" button (<a href="figure18.png">see Figure 18</a>)</li>
+  <li>Right Click the "Remotes" folder and select "Create Remote..." (<a href="figure19.png">see Figure 19</a>)</li>
+  <li>Select a name like "agilefant-main" and select "Configure fetch" and hit OK (<a href="figure20.png">see Figure 20</a>)</li>
+  <li>Click paste (<a href="figure21.png">see Figure 21</a>)</li>
+  <li>Ignore the warning by clicking yes (<a href="figure22.png">see Figure 22</a>)</li>
+  <li>Go to <a href="https://github.com/SuperAmerica/agilefant">https://github.com/SuperAmerica/agilefant</a> and copy the "Git Read-Only" url git://github.com/SuperAmerica/agilefant.git (<a href="figure23.png">see Figure 23</a>)</li>
+  <li>Click "Change" (<a href="figure21.png">see Figure 21</a>)</li>
+  <li>Add the SuperArmerica agilefant git url as the URI and hit finish (<a href="figure24.png">see Figure 24</a>)</li>
+  <li>Click "Save and Fetch" (<a href="figure21.png">see Figure 21</a>)</li>
+  <li>You should see the master branch and simply hit OK (<a href="figure25.png">see Figure 25</a>)</li>
+  <li>In the "Git Repositories" view you should now see two "Remotes" (<a href="figure26.png">see Figure 26</a>)</li>
+</ul>
+
+<h3>2.2.2 How to fetch from the original repository</h3>
+<ul>
+  <li>In the "Package Explorer" view right click the project root folder and select "Team"->"Remote"->"Fetch From..."(<a href="figure27.png">see Figure 27</a>)</li>
+  <li>Swtich the remote repository to the agilefant-main repo and click finish(<a href="figure28.png">see Figure 28</a>)</li>
+</ul>
+
+<h3>2.2.3 How to commit</h3>
+<ul>
+  <li>In the "Package Explorer: view right click the files you changed or the any folder with changed files and select "Team"->"Commit" (<a href="figure29.png">see Figure 29</a>)</li>
+  <li>Check the list of modified files and add a comment that starts with "WorkItem: xxx some comment" (without the " and where xxx is replaced by a number) and commit (Note that this commit is still only on your machine)</a>
+  <li>Right click the root folder and select "Team"->"Push Upstream" and click through the dialogue. (<a href="figure30.png">see Figure 30</a>)</li>
+</ul>
+
+<h1>Contact</h1>
+In case you find any errors or run into problems please email <a href="http://www.adrian-schroeter.com">Adrian</a> at <a href="mailto:adrian.schroeter@googlemail.com">adrian.schroeter@googlemail.com</a>, thanks.
+
+
+</body>
+</html>
